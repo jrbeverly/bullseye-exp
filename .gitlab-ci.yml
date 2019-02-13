@@ -10,9 +10,10 @@ build:
   script:
     - cd src/
     - dotnet build exp-bullseye.csproj
-    - dotnet run default
-    - dotnet pack exp-bullseye.csproj --output ../bin
+    - dotnet publish --no-restore -c Release --output ../publish exp-bullseye.csproj 
+    - dotnet pack exp-bullseye.csproj --output ../publish
+    - dotnet exp-bullseye.dll default
   artifacts:
     expire_in: 1 week
     paths:
-      - bin/
+      - publish/
