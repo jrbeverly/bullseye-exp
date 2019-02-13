@@ -9,7 +9,7 @@ build:
   image: microsoft/dotnet:latest
   script:
     - cd src/
-    - dotnet build
+    - dotnet build exp-bullseye.csproj
     - dotnet run default
     - dotnet pack exp-bullseye.csproj --output ../bin
   artifacts:
