@@ -6,7 +6,7 @@ stages:
 ##
 build:
   stage: "Build"
-  image: mcr.microsoft.com/dotnet/framework/aspnet
+  image: microsoft/dotnet:latest
   script:
     - cd src/
     - dotnet build
