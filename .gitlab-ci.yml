@@ -1,0 +1,18 @@
+stages:
+  - "Build"
+
+##
+## Build
+##
+build:
+  stage: "Build"
+  image: mcr.microsoft.com/dotnet/framework/aspnet
+  script:
+    - cd src/
+    - dotnet build
+    - dotnet run default
+    - dotnet pack exp-bullseye.csproj --output ../bin
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - bin/
