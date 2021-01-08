@@ -1,0 +1,19 @@
+{
+  "slug": "bullseye-exp",
+  "namespace": "jrbeverly",
+  "status": "archived",
+  "icon": "icon.svg",
+  "license": {
+    "type": "MIT",
+    "content": "Jonathan Beverly <jrbeverly>"
+  },
+  "topics": [
+    "dotnet",
+    "cli",
+    "bullseye",
+    "experiment"
+  ],
+  "languages": [
+    "C#"
+  ]
+}
