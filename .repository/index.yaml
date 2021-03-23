@@ -1,0 +1,17 @@
+slug: bullseye-exp
+description: Experimenting with using the .NET library BullsEye
+project: workbench
+namespace:
+status: archived
+icon: icon.svg
+license:
+  type: MIT
+  content: Jonathan Beverly <jrbeverly>
+  year: 2019
+topics: |-
+  [
+    "dotnet",
+    "cli",
+    "bullseye",
+    "experiment"
+  ]
